@@ -38,10 +38,12 @@ export default class Keyboard {
     // keydownイベント
     document.addEventListener("keydown", (e: KeyboardEvent) => {
       this._key[e.key] = true;
+      // console.log(this._key); // for test
     });
     // keyupイベント
     document.addEventListener("keyup", (e: KeyboardEvent) => {
       this._key[e.key] = false;
+      // console.log(this._key); // for test
     });
   }
 }
